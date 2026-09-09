@@ -279,6 +279,9 @@ jobs:
         if: ${{ inputs.youquality }}
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/YouQuality.git
 
+      - name: Install Go
+        run: brew install go
+
       - name: Build YouMod
         run: |
           cd YouMod
